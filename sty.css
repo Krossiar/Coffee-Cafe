@@ -1,0 +1,267 @@
+
+*{
+    margin: 0;
+padding: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai';
+}
+#logo{
+    margin: -54px -22px;
+    width: 200px;
+    height: 200px;
+}
+#logo img{
+    margin: 10px;
+    height: 200px ;
+    width: 200px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+}
+#home::before{
+    content: "";
+    background:url('https://cdn.pixabay.com/photo/2015/05/31/10/58/cup-791072_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.87;
+    top: 0px;
+    left: 0px;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.btnk{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #00754a;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+#services{
+    display: flex;
+    margin: 80px;
+}
+.services-container{
+    margin-top: 20px;
+}
+.services-container2{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+#services .box{
+    border: 2px solid green;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: whitesmoke;
+
+}
+#services .box1{
+    border: 2px solid green;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: whitesmoke;
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+#services .box P{
+    font-family: 'Bree Serif', serif;
+}
+#services{
+    
+}
+#client-section{
+    height: 244px;
+    position: relative;
+}
+#clients img{
+    height: 100px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 30px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://cdn.pixabay.com/photo/2016/12/15/12/24/contact-us-1908762_1280.png');
+}
+span::before{
+    content: "Hungry";
+    animation: animate infinite 10s;
+}
+@keyframes animate {
+    0% { 
+        content: "Hungry?"; 
+    } 
+
+    25% { 
+        content: "Game night?"; 
+    } 
+    50% { 
+        content: "Movie Marathon?"; 
+    } 
+
+    75% { 
+        content: "Late night at Office?"; 
+    } 
+    100% { 
+        content: "Exams?"; 
+    } 
+}
+.cate{
+    width: 1600px;
+    height: 500px;
+    margin-top: 40px;
+}
+.cate h1{
+    margin-right: 90px;
+}
+.img{
+    width: 250px;
+    height:300px;
+    margin-left: 40px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: aqua;
+    transition: 1s;    
+  }
+  .img:hover
+  {
+    transform: scale(1.3);
+    box-shadow: 5px 10px 8px rgb(0, 0, 0);
+    z-index: 3;
+  }
+  .sub1{
+    margin-top: 40px;
+    margin-left: 150px;
+    width: 1300px;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    
+  }
+  .roasted
+  {
+    background-image: url(https://cdn.pixabay.com/photo/2018/06/06/10/13/coffee-beans-3457587_960_720.jpg);
+    background-size: 250px 300px;
+    background-repeat: no-repeat;
+  }
+  .pour
+  {
+    background-image: url(https://cdn.pixabay.com/photo/2021/07/23/11/00/ground-coffee-6487114_1280.jpg);
+    background-size: 250px 300px;
+    background-repeat: no-repeat;
+  }
+  .equip
+  {
+    background-image: url(https://cdn.pixabay.com/photo/2012/11/21/11/14/coffee-66850_1280.jpg);
+    background-size: 250px 300px;
+    background-repeat: no-repeat;
+  }
+  .coff
+  {
+    background-image: url(https://m.media-amazon.com/images/I/512wKWklvzL.jpg);
+    background-size: 250px 300px;
+    background-repeat: no-repeat;
+  }
+  .city{
+    color: rgb(219, 219, 97);
+    font-style: bold;
+    font-size: 30px;
+  }
+ 
+
